@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">myFirstApp</string>
+    <string name="show_message">Show Message</string>
+</resources>
