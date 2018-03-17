@@ -8,19 +8,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button BtnshowMsg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        BtnshowMsg = (Button) findViewById(R.id.btnShowMsg);
+    public void btnShowMsg(View view) {
 
-        BtnshowMsg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Hellof, World!!!",Toast.LENGTH_SHORT).show();
-            }
-        });
+        Toast.makeText(this, "Hello,World", Toast.LENGTH_SHORT).show();
     }
 }
